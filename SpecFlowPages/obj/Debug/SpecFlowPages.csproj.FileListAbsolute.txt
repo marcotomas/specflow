@@ -1,0 +1,11 @@
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\SpecFlowPages.dll
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\SpecFlowPages.pdb
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\WebDriver.dll
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\WebDriver.Support.dll
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\WebDriver.xml
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\WebDriver.Support.xml
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.csprojResolveAssemblyReference.cache
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.dll
+C:\Users\mft\Documents\Visual Studio 2015\Projects\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.pdb
