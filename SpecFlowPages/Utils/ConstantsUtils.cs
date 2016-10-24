@@ -8,8 +8,9 @@ namespace SpecFlowPages
 {
     public class ConstantsUtils
     {
-        public static string Url = "http://www.specflow.org/";
+        public static string Url = "http://autotests01:8081/ATPortal/";
 
-        public static string GetStartedExcelButtonText = "Get Started Now with SpecFlow+ Excel!";
+        public static string UrlIndex = "http://autotests01:8081/ATPortal/Home/Index";
+
     }
 }

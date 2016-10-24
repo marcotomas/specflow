@@ -18,20 +18,19 @@ namespace SpecFlowTests.AcceptanceTests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class NavigateSpecFlowExcelFeature
+    public partial class LogoutFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "NavigateSpecFlowExcel.feature"
+#line 1 "SpecFlowFeature1.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "NavigateSpecFlowExcel", "\tIn order to navigate to Specflow-Excel documentation\r\n\tAs a Specflow user\r\n\tI wa" +
-                    "nt to Select+-->Specflow+-Excel", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Logout", "\tBefore Log in Page\r\n\tLogout user in page\r\n\tI want to the website login", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -46,9 +45,9 @@ namespace SpecFlowTests.AcceptanceTests
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "NavigateSpecFlowExcel")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Logout")))
             {
-                SpecFlowTests.AcceptanceTests.NavigateSpecFlowExcelFeature.FeatureSetup(null);
+                SpecFlowTests.AcceptanceTests.LogoutFeature.FeatureSetup(null);
             }
         }
         
@@ -69,21 +68,28 @@ namespace SpecFlowTests.AcceptanceTests
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Navigate to Specflow+")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "NavigateSpecFlowExcel")]
-        public virtual void NavigateToSpecflow()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Logout User")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Logout")]
+        public virtual void LogoutUser()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to Specflow+", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Logout User", ((string[])(null)));
 #line 7
 this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Username",
+                        "Password"});
+            table1.AddRow(new string[] {
+                        "mft",
+                        "Evor@743"});
 #line 8
- testRunner.Given("the specflow page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
- testRunner.When("I press Specflow+", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
- testRunner.And("Specflow+-Excel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("Before Log in the web site", ((string)(null)), table1, "Given ");
 #line 11
- testRunner.Then("I\'m able to see \'Get Started Now with SpecFlow+ Excel!\' button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I press in user name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+ testRunner.And("I press logout button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.Then("I should be at the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -61,21 +61,32 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AcceptanceTests\NavigateSpecFlowExcel.feature.cs">
+    <Compile Include="AcceptanceTests\LoginNavigate.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NavigateSpecFlowExcel.feature</DependentUpon>
+      <DependentUpon>LoginNavigate.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTests\NavigateSpecFlowExcelSteps.cs" />
+    <Compile Include="AcceptanceTests\LoginSteps.cs" />
+    <Compile Include="AcceptanceTests\SpecFlowFeature1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTest\Credentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AcceptanceTests\SpecFlowFeature1Steps.cs" />
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="AcceptanceTests\NavigateSpecFlowExcel.feature">
+    <None Include="AcceptanceTests\LoginNavigate.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>NavigateSpecFlowExcel.feature.cs</LastGenOutput>
+      <LastGenOutput>LoginNavigate.feature.cs</LastGenOutput>
     </None>
+    <None Include="AcceptanceTests\SpecFlowFeature1.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
