@@ -1,4 +1,6 @@
 ﻿using SpecFlowPages;
+using SpecResults;
+using SpecResults.Json;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowTests.Utils
@@ -10,6 +12,9 @@ namespace SpecFlowTests.Utils
         {
            Initialize();
            Instance.Navigate().GoToUrl(BaseAddress);
+            Reporters.FixedRunTime = System.DateTime.MinValue;
+            Reporters.Add(new JsonReporter());
+            ApprovalTests.IntializeApprovalTests();
         }
 
         [AfterScenario]

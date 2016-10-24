@@ -37,6 +37,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ApprovalTests, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ApprovalTests.dll</HintPath>
+    </Reference>
+    <Reference Include="ApprovalUtilities, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ApprovalUtilities.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
@@ -72,6 +80,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
     </Compile>
+    <Compile Include="Utils\ApprovalTests.cs" />
     <Compile Include="ModelTest\Credentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AcceptanceTests\SpecFlowFeature1Steps.cs" />
@@ -94,6 +103,20 @@
       <Project>{3b4ce5c2-9d6a-484a-9190-371c287bfc29}</Project>
       <Name>SpecFlowPages</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SpecResults.Json\SpecResults.Json.csproj">
+      <Project>{c830c923-5398-4f28-99c2-1592ee5f4f7b}</Project>
+      <Name>SpecResults.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecResults\SpecResults.csproj">
+      <Project>{EABA391E-6B65-4E5C-8842-3D71A5F97B4F}</Project>
+      <Name>SpecResults</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="approvals\SpecResults.Json.JsonReporter\approval.txt" />
+    <Content Include="approvals\SpecResults.PlainText.PlainTextReporter\approval.txt" />
+    <Content Include="approvals\SpecResults.Xml.XmlReporter\approval.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

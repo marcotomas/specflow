@@ -19,4 +19,3 @@ C:\Users\mft\Documents\Project - Phase 3\SpecFlowTests\SpecFlowPages\bin\Debug\W
 C:\Users\mft\Documents\Project - Phase 3\SpecFlowTests\SpecFlowPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\Users\mft\Documents\Project - Phase 3\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.dll
 C:\Users\mft\Documents\Project - Phase 3\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.pdb
-C:\Users\mft\Documents\Project - Phase 3\SpecFlowTests\SpecFlowPages\obj\Debug\SpecFlowPages.csprojResolveAssemblyReference.cache
